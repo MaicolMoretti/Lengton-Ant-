@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formica di Langton </title>
+</head>
+<body>
+    <!-- Collegamento langton.js al bottone (******************************  NON FUNZIONANTE  **************************) -->
+    <input id="clickMe" type="button" value="Start Formica di Langton" > <!--br--> <br>
+    <!-- Per attivare una funzione con un bottone si deve inserire -> onClick="nomeFunzione()" -->
+    <input type=button onClick="somma()" value="somma">
+    <br>
+    <input id="bottone cellular automata" onclick="controllo()"  type="button" value="Controllo" > 
+    <br>
+    
+    <canvas id="screen"></canvas>
+    <br>
+    <canvas id="screenca"></canvas>
+
+    <p>
+        <!--Questo è il primo bottone-->
+        <div id="contenitore_bottone_like" data-commentid="1"> </div>
+    </p>
+
+    <p>
+        <!--Questo è il secondo bottone-->
+        <div id="contenitore_bottone_like" data-commentid="2"> </div>
+    </p>
+
+    <!--Collegamento dell'HTML con il JS-->
+    <script src="funzione.js"> </script>
+    <script src="langtonNo.js"> </script>
+    <script src="ca.js"> </script>
+
+  <!-- Carica React. -->
+  <!-- Nota: quando rilasci il codice in produzione, sostituisci "development.js" con "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Carica il nostro componente React. -->
+  <script src="bottone_like.js"></script>
+
+</body>
+
+</html>
